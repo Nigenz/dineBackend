@@ -40,7 +40,7 @@ public class Main {
     }
     
     @PostMapping(value = "/save")
-    public ResponseEntity<?> saveOrUpdateStudent(@RequestBody @Valid Users user) {
+    public ResponseEntity<?> saveOrUpdateUser(@RequestBody @Valid Users user) {
     	userservice.saveOrUpdateUser(user);
         return new ResponseEntity("User added successfully", HttpStatus.OK);
     }
