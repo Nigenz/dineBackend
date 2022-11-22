@@ -7,5 +7,5 @@ public interface UserService {
 	public void listAll();
 	public void findFirst();
 	public void findByRegex();
-	public void saveOrUpdateStudent(Users user);
+	public void saveOrUpdateUser(Users user);
 }

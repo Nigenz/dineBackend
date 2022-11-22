@@ -42,7 +42,7 @@ public class UserServiceImpl implements UserService {
 		 repository.findCustomByRegExAddress("^New").forEach(u -> System.out.println(u));
 		 }
 		 
-		 public void saveOrUpdateStudent(Users user) {
+		 public void saveOrUpdateUser(Users user) {
 			 repository.save(user);
 			 
 		 }
