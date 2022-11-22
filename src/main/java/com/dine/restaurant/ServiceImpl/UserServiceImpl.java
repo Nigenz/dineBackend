@@ -28,7 +28,7 @@ public class UserServiceImpl implements UserService {
 		 
 		 public void listAll() {
 		 System.out.println("Listing sample data");
-		 repository.findAll().forEach(u -> System.out.println(u));
+		 repository.findAll().forEach(u -> System.out.println(u.getName()));
 		 }
 		 
 		 public void findFirst() {
@@ -40,6 +40,11 @@ public class UserServiceImpl implements UserService {
 		 public void findByRegex() {
 		 System.out.println("Finding by Regex - All with address starting with ^New");
 		 repository.findCustomByRegExAddress("^New").forEach(u -> System.out.println(u));
+		 }
+		 
+		 public void saveOrUpdateUser(Users user) {
+			 repository.save(user);
+			 
 		 }
 		
 }
