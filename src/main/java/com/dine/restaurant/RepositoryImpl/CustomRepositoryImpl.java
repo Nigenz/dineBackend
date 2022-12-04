@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.core.query.Query;
 
 import org.springframework.stereotype.Component;
 
-import com.dine.restaurant.DocumentModel.Users;
+import com.dine.restaurant.DocumentModel.User;
 import com.dine.restaurant.Repository.CustomRepository;
 import com.mongodb.client.result.UpdateResult;
 
@@ -25,7 +25,7 @@ public class CustomRepositoryImpl implements CustomRepository {
  Update update = new Update();
  update.set("salary", salary);
  
- UpdateResult result = mongoTemplate.updateFirst(query, update, Users.class);
+ UpdateResult result = mongoTemplate.updateFirst(query, update, User.class);
  
  if (result != null)
  return result.getModifiedCount();
