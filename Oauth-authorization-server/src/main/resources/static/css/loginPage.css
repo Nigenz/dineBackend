@@ -1,0 +1,59 @@
+body {
+    background: #242C3B;
+    font-family: 'Roboto', sans-serif;
+}
+
+.login-title {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.tilted-rectangle {
+position: absolute;
+width: 508.11px;
+height: 644.06px;
+left: 81.78px;
+top: 78px;
+background: linear-gradient(180deg, #BBEEE8 12.28%, rgba(204, 244, 239, 0.603557) 47.1%, rgba(212, 226, 225, 0.208825) 97.81%, rgba(217, 217, 217, 0) 100%);
+transform: rotate(29.24deg);
+}
+
+.front {
+	z-index: 999;
+}
+
+.back {
+	z-index:2;
+}
+
+.eclipse {
+width: 158px;
+height: 160px;
+border-radius: 50%;
+
+background: linear-gradient(89.28deg, #E2E5EC -1.22%, #FFFFFF 59.57%);
+box-shadow: inset 10px 10px 20px #BFCAE4;
+}
+
+.over{
+	overflow:hidden;
+}
+
+
+.logo-position{
+	position: relative;
+	top:0;
+	left: 0;
+	margin-top:10px;
+}
+
+.logo-icon{
+	position: absolute;
+	top:40px;
+	left: 240px;
+}
